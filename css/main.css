@@ -81,6 +81,13 @@ ul, ol {
 ul li {
 	list-style: none;
 }
+
+.ul_with_dots {
+	padding-left: 10px;
+}
+.ul_with_dots li {
+	list-style: disc !important;
+}
 .section {
 	padding: 100px 0;
 }
