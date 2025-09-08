@@ -48,6 +48,17 @@ $(document).ready(function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
 	});
+
+	const customNav = $('nav[role="navigation-custom"]');
+
+	customNav.find('a').on('click', function () {
+	  	var $el = $(this)
+	    	id = $el.attr('href');
+		$('html, body').animate({
+			scrollTop: $(id).offset().top - 75
+		}, 500);
+	  return false;
+	});
 });
 
 
