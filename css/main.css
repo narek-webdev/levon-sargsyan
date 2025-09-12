@@ -158,6 +158,72 @@ ul li {
 .navigation a:hover, .navigation a.active {
 	color: #262626;
 }
+
+/* Language Selector Styles */
+.language-selector {
+	position: relative;
+}
+
+.language-toggle {
+	position: relative;
+	cursor: pointer;
+}
+
+.language-toggle .fa-angle-down {
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.language-dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	min-width: 120px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	border: 1px solid #e0e0e0;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-10px);
+	transition: all 0.3s ease;
+	z-index: 1000;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.language-selector:hover .language-dropdown,
+.language-selector.active .language-dropdown {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.language-dropdown li {
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.language-dropdown li:last-child {
+	border-bottom: none;
+}
+
+.language-dropdown a {
+	display: block;
+	padding: 10px 15px;
+	color: #808080;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: 0;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.language-dropdown a:hover {
+	background: #f8f8f8;
+	color: #262626;
+}
 .nav-toggle {
 	display: none;
 	height: 44px;
@@ -298,7 +364,7 @@ ul li {
 	$Banner
 ========================================================================== */
 .banner {
-	background-image: url(../images/photo.png);
+	background-image: url(../images/Untitled_design.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	-moz-background-size: cover;
@@ -306,7 +372,22 @@ ul li {
 	-webkit-background-size: cover;
 	background-size: cover;
 	min-height: 750px;
+
+	/* background-image: url(../images/8d08cde1-aa88-4381-bf73-fb6a6a32370a.jpeg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 750px;
+	width: 660px; */
 }
+
+#mobile-levon-image {
+	display: none;
+}
+
 .banner-inner-wrapper {
 	float: right;
 }
@@ -483,9 +564,4 @@ ul li {
 	font-size: 14px;
 	color: #000;
 	letter-spacing: 15px;
-}
-.footer .fa-heart {
-	color: #e84545;
-	font-size: 12px;
-	margin: 0 2px;
 }

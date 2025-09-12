@@ -39,6 +39,34 @@
 		margin: 0;
 		text-align: center;
 	}
+	
+	/* Mobile Language Selector Styles */
+	.language-selector .language-toggle {
+		font-size: 25px;
+		display: none;
+	}
+	
+	.language-dropdown {
+		position: static;
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+		box-shadow: none;
+		border: none;
+		background: transparent;
+		margin-top: 10px;
+	}
+	
+	.language-dropdown li {
+		margin-bottom: 15px;
+		border: none;
+	}
+	
+	.language-dropdown a {
+		font-size: 20px;
+		color: #808080;
+		padding: 0;
+	}
 	.person {
 		margin: 0 auto 50px;
 	}
@@ -81,6 +109,20 @@
 	.footer .footer-col {
 		margin-bottom: 50px;
 	}
+
+	.banner {
+		background-image: url(../images/mobile_banner.jpg);
+	}
+
+	#mobile-levon-image {
+		display: block;
+		width: 250px;
+		margin: 0 auto;
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 30px);
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -91,7 +133,7 @@
 
 	.banner {
 		background-position: revert;
-		min-height: 750px;
+		/* min-height: 750px; */
 	}
 
 	.banner-inner-wrapper {

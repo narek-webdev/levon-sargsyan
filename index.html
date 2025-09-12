@@ -21,9 +21,19 @@
     <div class="header-content clearfix"> <a class="logo" href="#">Portfolio</a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
-          <li><a href="#introduction">About Me</a></li>
-          <li><a href="#works">Latest Works</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#introduction" id="about-me-nav">About Me</a></li>
+          <li><a href="#works" id="latest-works-nav">Latest Works</a></li>
+          <li><a href="#contact" id="contact-nav">Contact Me</a></li>
+          <li class="language-selector">
+            <a href="#" class="language-toggle">
+              <span class="current-lang">EN</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="language-dropdown">
+              <li><a href="#" data-lang="en">English</a></li>
+              <li><a href="#" data-lang="fr">Français</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
@@ -33,15 +43,17 @@
   <div class="container">
     <div class="col-md-7 banner-inner-wrapper">
       <div class="banner-text">
-        <h1>I'm Levon Sargsyan</h1>
-        <p>You can find my works here.</p>
+        <h1 id="i-am-text">I'm Levon Sargsyan</h1>
+        <p id="find-my-work">You can find my works here.</p>
         <nav role="navigation-custom">
-          <a href="#works" class="btn">Find out more</a> </div>
+          <a href="#works" class="btn" id="find-out-more">Find out more</a> </div>
         </nav>
       <!-- banner text --> 
     </div>
   </div>
-  <!-- Banner Section --> 
+
+  <img src="images/levon_image.jpeg" id="mobile-levon-image" alt="Mobile Banner" />
+   <!-- Banner Section --> 
 </section>
 <!-- Header Section --> 
 <!-- Intro Section -->
@@ -50,15 +62,13 @@
     <div class="row">
       <div class="col-md-4 col-sm-6">
         <div class="intro-content">
-          <h1>I do... What I love to do...</h1>
+          <h1 id="my-role-in-filmaking">My role in filmmaking</h1>
         </div>
       </div>
       <div class="col-md-5 col-sm-6">
         <div class="intro-content">
-          <p>
+          <p id="intro-paragraph">
             I’m a film student and work as a production manager on school projects. I plan, schedule, and make sure things run smoothly on set, during pre-production, and through production process. 
-          </p>
-          <p>
             I’ve also worked as a 2nd Assistant Director on a short film, which taught me how to coordinate crews and support the director on set. I’ve directed documentaries as well, so I understand the creative side of filmmaking. I enjoy solving problems and keeping productions on track, and I’m looking to gain experience on bigger projects.
           </p>
           <!-- <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
@@ -67,44 +77,44 @@
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="intro-content">
-          <h4>my expertise</h4>
+          <h4 id="my-expertise">my expertise</h4>
           <ul>
-            <li onclick="listToggle(this)"> <span class="li_btn">+</span> Production Management</li>
+            <li onclick="listToggle(this)"> <span class="li_btn">+</span> <span id="product-management">Production Management</span></li>
             <li class="plus_under">
               <ul class="ul_with_dots">
-                <li>Scheduling and planning shoots</li>
-                <li>Coordinating crews and departments</li>
-                <li>Budget tracking and resource management</li>
-                <li>On-set problem solving</li>
-              </ul>
-            </li>
-            
-            <li onclick="listToggle(this)"> <span class="li_btn">+</span> Pre-production</li>
-            <li class="plus_under">
-              <ul class="ul_with_dots">
-                <li>Script breakdowns and production planning</li>
-                <li>Location scouting coordination</li>
-                <li>Equipment and logistics</li>
+                <li id="schedule-and-planning">Scheduling and planning shoots</li>
+                <li id="coordinating-crews">Coordinating crews and departments</li>
+                <li id="budget-tracking">Budget tracking and resource management</li>
+                <li id="on-set-problem-solving">On-set problem solving</li>
               </ul>
             </li>
 
-            <li onclick="listToggle(this)"> <span class="li_btn">+</span> Post-Production</li>
+            <li onclick="listToggle(this)"> <span class="li_btn">+</span> <span id="pre-production">Pre-production</span></li>
             <li class="plus_under">
               <ul class="ul_with_dots">
-                <li>Coordinating editing, sound design, and color correction schedules</li>
-                <li>Managing post-production workflow and deadlines</li>
-                <li>Ensuring delivery of final materials to festivals, platforms, or screenings</li>
+                <li id="script-breakdowns">Script breakdowns and production planning</li>
+                <li id="location-scouting">Location scouting coordination</li>
+                <li id="equipment-logistics">Equipment and logistics</li>
               </ul>
             </li>
 
-            <li onclick="listToggle(this)"> <span class="li_btn">+</span> Assistant Directing</li>
+            <li onclick="listToggle(this)"> <span class="li_btn">+</span> <span id="post-production">Post-Production</span> </li>
             <li class="plus_under">
               <ul class="ul_with_dots">
-                <li>
+                <li id="editing-coordination">Coordinating editing, sound design, and color correction schedules</li>
+                <li id="post-production-workflow">Managing post-production workflow and deadlines</li>
+                <li id="final-delivery">Ensuring delivery of final materials to festivals, platforms, or screenings</li>
+              </ul>
+            </li>
+
+            <li onclick="listToggle(this)"> <span class="li_btn">+</span> <span id="assistant-directing">Assistant Directing</span> </li>
+            <li class="plus_under">
+              <ul class="ul_with_dots">
+                <li id="2nd-assistant-director">
                   2nd Assistant Director on a short film. Supporting the 1st AD and coordinating on-set activities
                 </li>
-                <li>Helping maintain workflow and communication between departments</li>
-                <li>Assisting in problem-solving during shoots</li>
+                <li id="maintaining-workflow">Helping maintain workflow and communication between departments</li>
+                <li id="problem-solving">Assisting in problem-solving during shoots</li>
               </ul>
             </li>
           </ul>
@@ -139,15 +149,15 @@
 <footer id="contact" class="footer">
   <div class="container">
     <div class="col-md-4">
-      <h4>Contact</h4>
+      <h4 id="contact-label">Contact</h4>
       <p> 
-        Address: <a href="https://maps.app.goo.gl/ZK9WD2zJ4ZsK29JJ9" target="_blank">Trappes, France</a> <br>
-        Call: <a href="tel:+33766775808"> +33 7 66 77 58 08 </a> <br>
-        Email: <a href="mailto:levon080719@gmail.com">levon080719@gmail.com </a>
+        <span id="address-field">Address</span>: <a href="https://maps.app.goo.gl/ZK9WD2zJ4ZsK29JJ9" target="_blank">Trappes, France</a> <br>
+        <span id="call-field">Call</span>: <a href="tel:+33766775808"> +33 7 66 77 58 08 </a> <br>
+        <span id="email-field">Email</span>: <a href="mailto:levon080719@gmail.com">levon080719@gmail.com </a>
     </p>
     </div>
     <div class="col-md-3">
-      <h4>Social presense</h4>
+      <h4 id="social-presense">Social presense</h4>
       <ul class="footer-share">
         <li><a href="https://www.facebook.com/levon.sargsyan.52" target="_blank"><i class="fa fa-facebook"></i></a></li>
         <li><a href="https://www.instagram.com/levonn_?igsh=dGt4dng1cjA5NXJv" target="_blank"><i class="fa fa-instagram"></i></a></li>
