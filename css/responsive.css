@@ -66,6 +66,14 @@
 		font-size: 20px;
 		color: #808080;
 		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+	}
+	
+	.language-dropdown img {
+		vertical-align: middle;
 	}
 	.person {
 		margin: 0 auto 50px;
